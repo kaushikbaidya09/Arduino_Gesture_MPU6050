@@ -4,13 +4,6 @@
 #define NUM_SAMPLES 3
 #define NUM_AXES 3
 
-// Since I am taking 3 samples per gesture,
-// And I am recording this gesture's 3 set of values.
-// Then I will normalize this data using the correlation coff. 
-// Corr will be calculated for each between input_data and each of the recorded samples.
-// Then I will give vote=1 for each row in corr_input whose value is greater than 0.6
-// If the number of votes >=7 , it is a correct gesture.
-
 double recorded_data[10][NUM_SAMPLES * NUM_AXES];
 double input_data[NUM_SAMPLES * NUM_AXES];  
 
